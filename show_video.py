@@ -15,6 +15,7 @@ def show_video(file_name):
 
         if not ret:
             print("비디오 읽기 오류")
+            return
 
         # 색 변환
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
