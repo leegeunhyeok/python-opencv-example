@@ -23,8 +23,8 @@ def tracking(target):
         lower_green = np.array([50, 50, 50])
         upper_green = np.array([70, 255, 255])
 
-        lower_red = np.array([-10, 50, 50])
-        upper_red = np.array([10, 255, 255])
+        lower_red = np.array([170, 50, 50])
+        upper_red = np.array([190, 255, 255])
 
         # HSV 이미지에서 청색, 초록, 빨간색만 추출하기 위한 임계값
         mask_blue = cv2.inRange(hsv, lower_blue, upper_blue)
